@@ -7,6 +7,60 @@
   pointer-events: none;
 }
 
+/*Margins*/
+.profimg{
+  max-width: 100%;
+  object-fit:contain;
+}
+.margin-t-1x{
+  margin-top: 20px;
+}
+.margin-t-2x{
+  margin-top: 40px;
+}
+.margin-t-3x{
+  margin-top: 50px;
+}
+.full-viewport-height{
+  min-height: 100vh;
+}
+.full-viewport-width{
+  min-width: 100vw;
+}
+
+/*Paddings*/
+.no-padding{
+  padding: 0 !important;
+}
+.padding-t-1x{
+  padding-top: 20px;
+}
+.padding-t-2x{
+  padding-top: 40px;
+}
+.padding-t-3x{
+  margin-top: 50px;
+}
+
+.footer{
+  min-height: 30vh;
+  background-color: black;
+  color: #dcdcdc;
+}
+.footer-content{
+  margin-top: 15vh;
+  transform: translateY(-30%);
+}
+.full-viewport-height{
+  min-height: 100vh;
+}
+.no-decor{
+  text-decoration: none !important;
+  color: white;
+}
+.no-decor:hover{
+  color: white;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -22,6 +76,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: 'sans-serif';
 }
 
 .App-link {
