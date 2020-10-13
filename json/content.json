@@ -3,6 +3,13 @@
         "title" : "I am Kanav Sharma.",
         "bio" : "I am a web developer and currently working with Infosys for HSBC. I currently work as front end web developer and i am responsible for devlivering high quality and accessibility friendly (AA Standard) application components for various users involving user authentication.",
         "phone":"+919418158988",
-        "email":"kanvmukulxxsharma@gmail.com"
+        "email":"kanvmukulxxsharma@gmail.com",
+        "skills":{
+            "desc":"I am always looking for finding better solutions and writing a clean and understandable code. I am curious by nature with a go-getter attitude.",
+            "javascript":"Modern javascript ES-6 with latest trends and knowledge about vulnerability.",
+            "frontend":"Front end libraries and frameworks like ReactJs, Angular JS and writing unit test cases in jasmine/karma.",
+            "database":"Knowledge about both relational DBs and nosql DBs like mongoDB.",
+            "backend":"Development of apps with back end managed with Node JS and Express JS using Restful APIs."
+        }
     }
 }
