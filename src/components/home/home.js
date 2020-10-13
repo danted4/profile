@@ -27,7 +27,6 @@ class HomeComponent extends React.Component {
         };
         img.src = process.env.PUBLIC_URL + "/images/prof2.jpg";
         axios.get('https://raw.githubusercontent.com/danted4/profile/master/public/json/content.json')
-        // axios.get('json/content.json')
             .then(res => {
                 this.props.updateAction(res.data.home);
             })
