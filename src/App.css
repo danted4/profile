@@ -10,7 +10,8 @@
 /*Margins*/
 .profimg{
   max-width: 100%;
-  object-fit:contain;
+  min-height: 100%;
+  object-fit:cover;
 }
 .margin-t-1x{
   margin-top: 20px;
