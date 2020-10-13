@@ -27,6 +27,7 @@ class HomeComponent extends React.Component {
         };
         img.src = process.env.PUBLIC_URL + "/images/prof2.jpg";
         axios.get('https://raw.githubusercontent.com/danted4/profile/master/public/json/content.json')
+        // axios.get('json/content.json')
             .then(res => {
                 this.props.updateAction(res.data.home);
             })
@@ -92,7 +93,7 @@ class HomeComponent extends React.Component {
                 <div className="col-xs-12 col-md-12 col-lg-12">
                     <div className="row no-gutters">
                         <div className="col-xs-4 col-md-4 col-lg-4" style={{ padding: '2rem', textAlign: 'left' }}>
-                            <h2>Skills.</h2>
+                            <h2>Skills</h2>
                             <p>{this.props.appState.rootReducer.skills.desc}</p>
                         </div>
                         <div className="col-xs-8 col-md-8 col-lg-8">
