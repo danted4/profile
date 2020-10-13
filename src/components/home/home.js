@@ -11,7 +11,6 @@ class HomeComponent extends React.Component{
     componentDidMount(){
             axios.get('https://raw.githubusercontent.com/danted4/profile/master/public/json/content.json')
             .then(res=>{
-              console.log(res.data.home);
               this.props.updateAction(res.data.home);
             })
             .catch(err => {
