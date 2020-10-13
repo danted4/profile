@@ -3,7 +3,8 @@ const applicationState = {
         title : "",
         bio : "",
         phone :"",
-        email:""
+        email:"",
+        skills:{}
     }
 }
 
