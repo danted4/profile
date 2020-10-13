@@ -30,6 +30,19 @@ class HomeComponent extends React.Component{
                                     this.props.appState.rootReducer.bio
                                 }
                             </p>
+                            <p>
+                                <div className="row no-gutters">
+                                    <div className="col-xs-12 col-md-12 col-lg-12">
+                                        <span><strong>Phone</strong></span>&nbsp;:&nbsp;<span>{this.props.appState.rootReducer.phone}</span>
+                                    </div>
+                                    <div className="col-xs-12 col-md-12 col-lg-12">
+                                        <span><strong>Email</strong></span>&nbsp;:&nbsp;<span>{this.props.appState.rootReducer.email}</span>
+                                    </div>
+                                    <div className="col-xs-12 col-md-12 col-lg-12">
+                                        <span><strong>Social</strong></span>&nbsp;:&nbsp;<span>icons</span>
+                                    </div>
+                                </div>
+                            </p>
                         
                         </Jumbotron>
                 </div>
