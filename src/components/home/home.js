@@ -2,13 +2,14 @@ import React from 'react';
 import axios from 'axios';
 import * as actionList from '../../actions/actions';
 import { connect } from 'react-redux';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 class HomeComponent extends React.Component{
     constructor(props){
         super(props);
     }
     componentDidMount(){
-            axios.get('https://raw.githubusercontent.com/danted4/profile/master/public/json/content.json')
+            axios.get('/json/content.json')
             .then(res=>{
               console.log(res.data.home);
               this.props.updateAction(res.data.home);
@@ -18,6 +19,7 @@ class HomeComponent extends React.Component{
             })
     }
     render(){
+        console.log(this.props.appState.rootReducer)
         return <React.Fragment>
             <div id="home" className="row no-gutters">
                 <div className="col-xs-12 col-md-6 col-lg-6">
@@ -33,10 +35,15 @@ class HomeComponent extends React.Component{
                             <p>
                                 <div className="row no-gutters">
                                     <div className="col-xs-12 col-md-12 col-lg-12">
-                                        <span><strong>Phone</strong></span>&nbsp;:&nbsp;<span>{this.props.appState.rootReducer.phone}</span>
+                                        <span><strong>Phone</strong></span>&nbsp;:&nbsp;
+                                        <CopyToClipboard text={this.props.appState.rootReducer.email} onCopy={() => alert('Contact Copied.')}>
+                                        <span>{this.props.appState.rootReducer.phone}</span>
+                                        </CopyToClipboard>
                                     </div>
                                     <div className="col-xs-12 col-md-12 col-lg-12">
-                                        <span><strong>Email</strong></span>&nbsp;:&nbsp;<span>{this.props.appState.rootReducer.email}</span>
+                                        <span><strong>Email</strong></span>&nbsp;:&nbsp;
+                                        <CopyToClipboard text={this.props.appState.rootReducer.email} onCopy={() => alert('Email Copied.')}>
+                                        <span>{this.props.appState.rootReducer.email}</span></CopyToClipboard>
                                     </div>
                                     <div className="col-xs-12 col-md-12 col-lg-12">
                                         <span><strong>Social</strong></span>&nbsp;:&nbsp;<span>icons</span>
