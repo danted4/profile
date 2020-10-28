@@ -10,6 +10,19 @@
             "frontend":"Front end libraries and frameworks like ReactJs, Angular JS and writing unit test cases in jasmine/karma.",
             "database":"Knowledge about both relational DBs and nosql DBs like mongoDB.",
             "backend":"Development of apps with back end managed with Node JS and Express JS using Restful APIs."
+        },
+        "experience":{
+            "desc":"I've worked in Wipro for StateStreet bank providing support to Fund Accounting applications for Germany, Italy and France for 2 years. I later developed my interest in MEAN/MERN applications, following which i was hired at Infosys for HSBC bank for developing high quality apps.",
+            "wipro":{
+                "title":"Software Engineer",
+                "company":"Wipro ( 2017 - 2019 )",
+                "desc":"Supported 3 major applications reponsible for delivering Fund accounting and reporting information to clients. Worked in automating processes through Unix and Python scripts and was recogonized and awarded under the title 'Automation Champion' for the same. I also started developing interest towards MEAN/MERN applications and created many demo applications inside wipro."
+            },
+            "infosys":{
+                "title":"Associate Consultant",
+                "company":"Infosys ( 2019 - current )",
+                "desc":"I am hired at Infosys for my work on MEAN/MERN applications. I am currently working for one of the important clients, HSBC. I am responsible for delivering high quality application components that are accessibility friendly in Angular 6 +, worked in migration of one the applications from old Angular JS to version 5 including writing unit test cases in jasmine/karma. Apart from this, I have also helped other teams outside of my POD due to my knowledge in React.Js as well."
+            }
         }
     }
 }
