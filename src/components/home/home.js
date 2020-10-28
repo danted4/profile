@@ -129,7 +129,26 @@ class HomeComponent extends React.Component {
                 {/*Experience*/}
                 <div className="col-xs-12 col-md-12 col-lg-12">
                     <div className="row no-gutters">
-
+                    <div className="col-xs-4 col-md-4 col-lg-4" style={{ padding: '2rem', textAlign: 'left' }}>
+                        <h2>Experience</h2>
+                        <p>{this.props.appState.rootReducer.experience.desc}</p>
+                    </div>
+                    <div className="col-xs-8 col-md-8 col-lg-8">
+                        <div className="row no-gutters">
+                            <div className="col-xs-12 col-md-12 col-lg-12" style={{ padding: '2rem', textAlign: 'left' }}>
+                                <h4>{this.props.appState.rootReducer.experience.infosys.title}</h4><h5>{this.props.appState.rootReducer.experience.infosys.company}</h5>
+                                <p>
+                                    {this.props.appState.rootReducer.experience.infosys.desc}
+                                </p>
+                            </div>
+                            <div className="col-xs-12 col-md-12 col-lg-12" style={{ padding: '0 2rem 2rem 2rem', textAlign: 'left' }}>
+                                <h4>{this.props.appState.rootReducer.experience.wipro.title}</h4><h5>{this.props.appState.rootReducer.experience.wipro.company}</h5>
+                                <p>
+                                    {this.props.appState.rootReducer.experience.wipro.desc}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>

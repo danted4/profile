@@ -4,7 +4,11 @@ const applicationState = {
         bio : "",
         phone :"",
         email:"",
-        skills:{}
+        skills:{},
+        experience:{
+            wipro:{},
+            infosys:{}
+        }
     }
 }
 
