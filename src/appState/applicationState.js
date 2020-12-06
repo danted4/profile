@@ -9,6 +9,11 @@ const applicationState = {
             wipro:{},
             infosys:{}
         }
+    },
+    portfolio: {
+        main:"",
+        desc:"",
+        progress:""
     }
 }
 

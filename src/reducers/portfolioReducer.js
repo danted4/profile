@@ -1,6 +1,6 @@
 import applicationState from '../appState/applicationState';
 
-const combinedReducer = (state = applicationState.home, action) =>{
+const portfolioReducer = (state = applicationState.portfolio, action) =>{
     switch (action.type) {
         case 'UPDATE':
             let newState = {...state, ...action.data };
@@ -9,4 +9,4 @@ const combinedReducer = (state = applicationState.home, action) =>{
             return state;
     }
 }
-export default combinedReducer;
+export default portfolioReducer;

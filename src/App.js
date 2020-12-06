@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomeComponent from './components/home/home';
+import PortfolioComponent from './components/portfolio/portfolio';
 import NavigationComponent from './components/nav/navigation';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <div className={"col-xs-12 col-md-12 col-lg-12 margin-t-1x"}>
             <Route path='/' component={()=>{return (<Redirect to="/home" />)}}></Route>
             <Route path='/home' component={HomeComponent}></Route>
+            <Route path='/portfolio' component={PortfolioComponent}></Route>
             </div>
           </div>
         </Switch>

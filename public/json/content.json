@@ -24,5 +24,10 @@
                 "desc":"I am hired at Infosys for my work on MEAN/MERN applications. I am currently working for one of the important clients, HSBC. I am responsible for delivering high quality application components that are accessibility friendly in Angular 6 +, worked in migration of one the applications from old Angular JS to version 5 including writing unit test cases in jasmine/karma. Apart from this, I have also helped other teams outside of my POD due to my knowledge in React.Js as well."
             }
         }
+    },
+    "portfolio":{
+        "main":"I have always appreciated javascript and what it can do.",
+        "desc":"What can be better than exploring it's power along with HTML5 canvas to create some fun games. I've created some of those and adding for you to explore.",
+        "progress":"Coming Soon..."
     }
 }
