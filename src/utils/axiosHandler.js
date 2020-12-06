@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const JSON_PATH='https://raw.githubusercontent.com/danted4/profile/master/public/json/content.json';
-const JSON_PATH='json/content.json';
+const JSON_PATH='https://raw.githubusercontent.com/danted4/profile/master/public/json/content.json';
+// const JSON_PATH='json/content.json';
 
 const REQUEST_HANDLER = {
     updateAppState : (fn,component) => {
